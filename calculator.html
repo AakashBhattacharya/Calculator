@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Calculator</title>
+  <meta charset = "utf-8">
+  <meta name = "description" content = "This is a simple calculator">
+  <link href = "calculator.css" rel = "stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Montserrat&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body id = "bd">
+  <h1>Calculator</h1>
+
+  <div class = "header" name = "head">
+  <input type = "text" id = "result" name = "textbox" placeholder = "Result">
+  <span><button id = "clc" class = "x" onclick = "clearScreen()">C</button></span>
+  </div>
+  <div class = "container">
+  <span><button class = "btn" onclick = "getinput(1)">1</button></span>
+  <span><button class = "btn" onclick = "getinput(2)">2</button></span>
+  <span><button class = "btn" onclick = "getinput(3)">3</button></span>
+  <span><button class = "btn" onclick = "getinput('+')">+</button></span></br>
+  <span><button class = "btn" onclick = "getinput(4)">4</button></span>
+  <span><button class = "btn" onclick = "getinput(5)">5</button></span>
+  <span><button class = "btn" onclick = "getinput(6)">6</button></span>
+  <span><button class = "btn" onclick = "getinput('-')">-</button></span></br>
+  <span><button class = "btn" onclick = "getinput(7)">7</button></span>
+  <span><button class = "btn" onclick = "getinput(8)">8</button></span>
+  <span><button class = "btn" onclick = "getinput(9)">9</button></span>
+  <span><button class = "btn" onclick = "getinput('*')">x</button></span></br>
+  <span><button class = "btn" onclick = "getinput('/')">/</button></span>
+  <span><button class = "btn" onclick = "getinput(0)">0</button></span>
+  <span><button class = "btn" onclick = "getinput('.')">.</button></span>
+  <span><button class = "btn" onclick = "solve()">=</button></span>
+  </div>
+  <div class = "footer">
+  <button id = "light">Light Mode 🌞</button>
+  <button id = "dark">Dark Mode 🌙</button>
+  </div>
+      <script src = "calculator.js" charset = "utf-8">
+      </script>
+    </body>
+    </html>
